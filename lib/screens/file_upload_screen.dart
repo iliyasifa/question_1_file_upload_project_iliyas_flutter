@@ -19,8 +19,12 @@ class FileUploadScreenState extends State<FileUploadScreen> {
   /// to store the file path
   File? _file;
 
-  /// flag for uploading status
+  /// flag to show animation while uploading
   bool _isUploading = false;
+
+  /// flag for sync status
+  /// used to delete in cloud if synced to cloud
+  bool _isSyncedToCloud = false;
 
   /// controller to the video
   late VideoPlayerController _videoPlayerController;
@@ -154,6 +158,7 @@ class FileUploadScreenState extends State<FileUploadScreen> {
           await uploadTask.whenComplete(() {
             setState(() {
               _isUploading = false;
+              _isSyncedToCloud = true;
             });
           });
           _restrictDuplicateUpload = _file!;
@@ -243,6 +248,7 @@ class FileUploadScreenState extends State<FileUploadScreen> {
                 _videoPlayerController.play();
               });
           }
+          _isSyncedToCloud = false;
         });
       } else {
         if (mounted) {
@@ -272,9 +278,16 @@ class FileUploadScreenState extends State<FileUploadScreen> {
               onPressed: () async {
                 String filePath = 'uploads/${_file!.path}';
 
-                /// to delete in cloud
-                deleteFileFromStorage(filePath);
+                /// to delete in cloud if synced
+                if (_isSyncedToCloud) {
+                  deleteFileFromStorage(filePath);
+                }
                 setState(() {
+                  /// to reset synced flag
+                  if (_isSyncedToCloud) {
+                    _isSyncedToCloud = false;
+                  }
+
                   /// to delete in UI screen
                   _file = null;
                   _isImage = false;
