@@ -5,7 +5,7 @@ import 'package:question_1_file_upload_project_iliyas_flutter/common/empty_state
 import 'package:video_player/video_player.dart';
 
 /// FilePreview class to show image or video
-class FilePreview extends StatelessWidget {
+class FilePreview extends StatefulWidget {
   final File? file;
   final VideoPlayerController? videoPlayerController;
   final bool isVideo;
@@ -22,27 +22,41 @@ class FilePreview extends StatelessWidget {
   });
 
   @override
+  State<FilePreview> createState() => _FilePreviewState();
+}
+
+class _FilePreviewState extends State<FilePreview> {
+  @override
   Widget build(BuildContext context) {
-    if (file != null || isImage || isVideo) {
-      if (isVideo) {
-        return AspectRatio(
-          aspectRatio: videoPlayerController!.value.aspectRatio,
-          child: VideoPlayer(videoPlayerController!),
+    if (widget.file != null || widget.isImage || widget.isVideo) {
+      if (widget.isVideo) {
+        return InkWell(
+          onTap: () {
+            setState(() {
+              widget.videoPlayerController!.value.isPlaying
+                  ? widget.videoPlayerController!.pause()
+                  : widget.videoPlayerController!.play();
+            });
+          },
+          child: AspectRatio(
+            aspectRatio: widget.videoPlayerController!.value.aspectRatio,
+            child: VideoPlayer(widget.videoPlayerController!),
+          ),
         );
-      } else if (isImage) {
+      } else if (widget.isImage) {
         return Image.file(
-          file!,
+          widget.file!,
           fit: BoxFit.contain,
         );
       } else {
         return InkWell(
-          onTap: addFileCallBack,
+          onTap: widget.addFileCallBack,
           child: const EmptyStatePreview(),
         );
       }
     } else {
       return InkWell(
-        onTap: addFileCallBack,
+        onTap: widget.addFileCallBack,
         child: const EmptyStatePreview(),
       );
     }
