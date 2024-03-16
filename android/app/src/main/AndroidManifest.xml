@@ -1,6 +1,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
     <application
-        android:label="question_1_file_upload_project_iliyas_flutter"
+        android:label="Awesome File Upload"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity
