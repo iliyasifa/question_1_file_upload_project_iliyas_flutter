@@ -20,8 +20,10 @@ Preview: View images or videos with a single tap.
 
 ## Screensho![1000003515](https://github.com/iliyasifa/question_1_file_upload_project_iliyas_flutter_16_march_2024/assets/88129182/70eaff7d-408c-4cb4-9251-71a1091141d4)![1710575208584](https://github.com/iliyasifa/question_1_file_upload_project_iliyas_flutter_16_march_2024/assets/88129182/86640836-f7d9-48d9-9ead-cc6b4f70674b)
 ![Uploading 1710575276249.jpg…]()
-![1710574898087](https://github.com/iliyasifa/question_1_file_upload_project_iliyas_flutter_16_march_2024/assets/88129182/abaf48fa-d9d5-4481-9799-c6c416638581)
-
-ts![1710574898087](https![1710575133981](https://github.com/iliyasifa/question_1_file_upload_project_iliyas_flutter_16_march_2024/assets/88129182/bc0aa8b4-cfa7-4933-bde6-9fa1ece06cbf)
-https://github.com/iliyasifa/question_1_file_upload_project_iliyas_flutter_16_march_2024/assets/88129182/26373ffc-33dd-4c3e-a6f8-38c6730b99de)
+![1710574898087](https://github.com/iliyasifa/question_1_file_upload_project_iliyas_flutter_16_march_2024/assets/88129182/abaf48fa-d9d5-4481-9799-c6c4166385![1710575918792](https://github.com/iliyasifa/question_1_file_upload_project_iliyas_flutter_16_march_2024/assets/88129182/6e9d503e-6ee2-4d5c-aafa-353da59bfad3)
+![1710575918808](https://github.com/iliyasifa/question_1_file_upload_project_iliyas_flutter_16_march_2024/assets/88129182/d61fe1c8-be5a-4f1d-a047-e62d550e1018)
+![1710575918783](https://github.com/iliyasifa/question_1_file_upload_project_iliyas_flutter_16_march_2024/assets/88129182/05384f79-8b7f-4f99-812c-39939adcff9a)
+![1710575918774](https://github.com/iliyasifa/question_1_file_upload_project_iliyas_flutter_16_march_2024/assets/88129182/8f75575e-6119-48f8-a9fd-ae7b63b847b6)
+![1710575918800](https://github.com/iliyasifa/question_1_file_upload_project_iliyas_flutter_16_march_2024/assets/88129182/d65f3049-8a9a-4dba-81df-f00953436bf6)
+81)
 
