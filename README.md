@@ -22,5 +22,5 @@ Preview: View images or videos with a single tap.
 ![Uploading 1710575276249.jpg…]()
 
 ts![1710574898087](https![1710575133981](https://github.com/iliyasifa/question_1_file_upload_project_iliyas_flutter_16_march_2024/assets/88129182/bc0aa8b4-cfa7-4933-bde6-9fa1ece06cbf)
-://github.com/iliyasifa/question_1_file_upload_project_iliyas_flutter_16_march_2024/assets/88129182/26373ffc-33dd-4c3e-a6f8-38c6730b99de)
+https://github.com/iliyasifa/question_1_file_upload_project_iliyas_flutter_16_march_2024/assets/88129182/26373ffc-33dd-4c3e-a6f8-38c6730b99de)
 
