@@ -3,6 +3,7 @@ import 'dart:io';
 import 'package:connectivity_plus/connectivity_plus.dart';
 import 'package:flutter/material.dart';
 import 'package:image_picker/image_picker.dart';
+import 'package:firebase_storage/firebase_storage.dart';
 import 'package:question_1_file_upload_project_iliyas_flutter/screens/widgets/file_preview.dart';
 import 'package:question_1_file_upload_project_iliyas_flutter/screens/widgets/uploading_overlay.dart';
 import 'package:video_player/video_player.dart';
@@ -144,20 +145,16 @@ class FileUploadScreenState extends State<FileUploadScreen> {
           setState(() {
             _isUploading = true;
           });
-          await Future.delayed(const Duration(seconds: 4));
           // Upload file to Firebase Storage
-          // final Reference storageRef =
-          //     FirebaseStorage.instance.ref().child('uploads/${_file!.path}');
-          // UploadTask uploadTask = storageRef.putFile(_file!);
+          final Reference storageRef =
+              FirebaseStorage.instance.ref().child('uploads/${_file!.path}');
+          UploadTask uploadTask = storageRef.putFile(_file!);
 
-          // // Wait for upload to complete
-          // await uploadTask.whenComplete(() {
-          //   setState(() {
-          //     _isUploading = false;
-          //   });
-          // });
-          setState(() {
-            _isUploading = false;
+          // Wait for upload to complete
+          await uploadTask.whenComplete(() {
+            setState(() {
+              _isUploading = false;
+            });
           });
           _restrictDuplicateUpload = _file!;
           if (mounted) {
