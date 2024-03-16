@@ -9,7 +9,7 @@ Awesome File Upload is a mobile application that allows users to preview images 
 Preview: View images or videos with a single tap.
 - Add File: Tap the "Add File" button to select a new file from your device's gallery.
 - Upload: Tap the "Upload" button to upload the selected file to the cloud. During the upload process, a cloud animation is displayed to indicate that the file is being uploaded.
-- Delete: Long press on an image or video to delete it from the preview page. A confirmation dialog will appear before deletion.
+- Delete: Long press on an image or video to delete it from the preview page and cloud. A confirmation dialog will appear before deletion.
 - Upload Restriction: If a file has already been uploaded to the cloud, attempting to upload it again will display a snack bar message indicating that the file has already been uploaded.
 
 ## Usage
