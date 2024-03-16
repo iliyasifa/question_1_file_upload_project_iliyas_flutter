@@ -76,7 +76,7 @@ class FileUploadScreenState extends State<FileUploadScreen> {
 
                     ///
                     child: SizedBox(
-                      height: 300,
+                      height: 500,
                       child: FilePreview(
                         file: _file,
                         videoPlayerController: _videoPlayerController,
