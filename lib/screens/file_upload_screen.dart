@@ -230,10 +230,11 @@ class FileUploadScreenState extends State<FileUploadScreen> {
       bool isLimit = File(pickedFile.path).lengthSync() < (10 * 1024 * 1024);
       if (isLimit) {
         setState(() {
+          _file = File(pickedFile!.path);
           if (isImagePick) {
             _isImage = true;
             _isVideo = false;
-          } else {
+          } else if (isVideoPick) {
             _isVideo = true;
             _isImage = false;
             _videoPlayerController = VideoPlayerController.file(_file!)
@@ -242,7 +243,6 @@ class FileUploadScreenState extends State<FileUploadScreen> {
                 _videoPlayerController.play();
               });
           }
-          _file = File(pickedFile!.path);
         });
       } else {
         if (mounted) {
