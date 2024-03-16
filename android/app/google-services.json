@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "886747534653",
+    "project_id": "q1-fileupload",
+    "storage_bucket": "q1-fileupload.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:886747534653:android:5c4ae9f90c9815f240e154",
+        "android_client_info": {
+          "package_name": "com.example.question_1_file_upload_project_iliyas_flutter"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDkRyPTaZ2P4wd9sJtQijxn5atVG33kJCo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
