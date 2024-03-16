@@ -71,7 +71,7 @@ class FileUploadScreenState extends State<FileUploadScreen> {
                   GestureDetector(
                     /// to delete or select a file in the preview area
                     onLongPress: _file != null
-                        ? () => _deleteFile(context)
+                        ? () => _deleteFileDialogBox(context)
                         : () => _selectFile(context),
 
                     ///
@@ -252,8 +252,8 @@ class FileUploadScreenState extends State<FileUploadScreen> {
     }
   }
 
-  /// [_deleteFile] to delete file locally not
-  void _deleteFile(BuildContext context) {
+  /// [_deleteFileDialogBox] to delete file locally and in cloud
+  void _deleteFileDialogBox(BuildContext context) {
     showDialog(
       context: context,
       builder: (BuildContext context) {
@@ -264,18 +264,24 @@ class FileUploadScreenState extends State<FileUploadScreen> {
           actions: <Widget>[
             TextButton(
               onPressed: () {
-                Navigator.of(context).pop(); // Close the dialog
+                Navigator.of(context).pop();
               },
               child: const Text('Cancel'),
             ),
             TextButton(
-              onPressed: () {
+              onPressed: () async {
+                String filePath = 'uploads/${_file!.path}';
+
+                /// to delete in cloud
+                deleteFileFromStorage(filePath);
                 setState(() {
+                  /// to delete in UI screen
                   _file = null;
                   _isImage = false;
                   _isVideo = false;
                 });
-                Navigator.of(context).pop(); // Close the dialog
+
+                Navigator.of(context).pop();
               },
               child: const Text(
                 'Delete',
@@ -288,5 +294,20 @@ class FileUploadScreenState extends State<FileUploadScreen> {
         );
       },
     );
+  }
+
+  /// [deleteFileFromStorage] to delete from the cloud
+  Future<void> deleteFileFromStorage(String filePath) async {
+    try {
+      // Get a reference to the file
+      Reference storageRef = FirebaseStorage.instance.ref().child(filePath);
+
+      // Delete the file
+      await storageRef.delete();
+
+      debugPrint('File deleted successfully');
+    } catch (e) {
+      debugPrint('Error deleting file: $e');
+    }
   }
 }
