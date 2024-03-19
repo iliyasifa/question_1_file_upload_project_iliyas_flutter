@@ -1,5 +1,4 @@
 # Awesome File Upload![image](https://github.com/iliyasifa/question_1_file_upload_project_iliyas_flutter_16_march_2024/assets/88129182/c373b270-4856-4e1a-8805-13de364fb4ff)
-![image]
 
 
 Awesome File Upload is a mobile application that allows users to preview images or videos, add new files, and upload them to the cloud.
@@ -21,8 +20,10 @@ Awesome File Upload is a mobile application that allows users to preview images 
 4. To upload a file to the cloud, tap the "Upload" button. If the file has already been uploaded, a message will be displayed.
 5. To delete a file, long press on the image or video thumbnail and confirm the deletion in the alert dialog.
 
-## Screenshots![1000003515](https://github.com/iliyasifa/question_1_file_upload_project_iliyas_flutter_16_march_2024/assets/88129182/70eaff7d-408c-4cb4-9251-71a1091141d4)![1710575208584](https://github.com/iliyasifa/question_1_file_upload_project_iliyas_flutter_16_march_2024/assets/88129182/86640836-f7d9-48d9-9ead-cc6b4f70674b)
-[1710575918792](https://github.com/iliyasifa/question_1_file_upload_project_iliyas_flutter_16_march_2024/assets/88129182/6e9d503e-6ee2-4d5c-aafa-353da59bfad3)
+## Screenshots
+![1000003515](https://github.com/iliyasifa/question_1_file_upload_project_iliyas_flutter_16_march_2024/assets/88129182/70eaff7d-408c-4cb4-9251-71a1091141d4)
+![1710575208584](https://github.com/iliyasifa/question_1_file_upload_project_iliyas_flutter_16_march_2024/assets/88129182/86640836-f7d9-48d9-9ead-cc6b4f70674b)
+![1710575918792](https://github.com/iliyasifa/question_1_file_upload_project_iliyas_flutter_16_march_2024/assets/88129182/6e9d503e-6ee2-4d5c-aafa-353da59bfad3)
 ![1710575918808](https://github.com/iliyasifa/question_1_file_upload_project_iliyas_flutter_16_march_2024/assets/88129182/d61fe1c8-be5a-4f1d-a047-e62d550e1018)
 ![1710575918783](https://github.com/iliyasifa/question_1_file_upload_project_iliyas_flutter_16_march_2024/assets/88129182/05384f79-8b7f-4f99-812c-39939adcff9a)
 ![1710575918774](https://github.com/iliyasifa/question_1_file_upload_project_iliyas_flutter_16_march_2024/assets/88129182/8f75575e-6119-48f8-a9fd-ae7b63b847b6)
