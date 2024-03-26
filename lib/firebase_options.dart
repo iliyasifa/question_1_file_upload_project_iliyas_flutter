@@ -43,38 +43,12 @@ class DefaultFirebaseOptions {
     }
   }
 
-  static const FirebaseOptions web = FirebaseOptions(
-    apiKey: 'AIzaSyA1FtfiVEaAza71th5gqCJfOrI9UyO2Otk',
-    appId: '1:886747534653:web:95b7fb18dacfa11640e154',
-    messagingSenderId: '886747534653',
-    projectId: 'q1-fileupload',
-    authDomain: 'q1-fileupload.firebaseapp.com',
-    storageBucket: 'q1-fileupload.appspot.com',
-  );
-
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyDkRyPTaZ2P4wd9sJtQijxn5atVG33kJCo',
-    appId: '1:886747534653:android:5c4ae9f90c9815f240e154',
+    apiKey: 'YOUR-API-KEY-HERE',
+    appId: 'YOUR-APP-ID-HERE',
     messagingSenderId: '886747534653',
     projectId: 'q1-fileupload',
     storageBucket: 'q1-fileupload.appspot.com',
   );
-
-  static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'AIzaSyBvrgw8ZSZxP8UfHeREDZLh11-UWK3vBRA',
-    appId: '1:886747534653:ios:a750b5a6b865669e40e154',
-    messagingSenderId: '886747534653',
-    projectId: 'q1-fileupload',
-    storageBucket: 'q1-fileupload.appspot.com',
-    iosBundleId: 'com.example.question1FileUploadProjectIliyasFlutter',
-  );
-
-  static const FirebaseOptions macos = FirebaseOptions(
-    apiKey: 'AIzaSyBvrgw8ZSZxP8UfHeREDZLh11-UWK3vBRA',
-    appId: '1:886747534653:ios:da95d4001608bf3f40e154',
-    messagingSenderId: '886747534653',
-    projectId: 'q1-fileupload',
-    storageBucket: 'q1-fileupload.appspot.com',
-    iosBundleId: 'com.example.question1FileUploadProjectIliyasFlutter.RunnerTests',
   );
 }
